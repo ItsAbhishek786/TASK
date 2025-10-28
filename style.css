@@ -1,0 +1,88 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #e91e63;
+}
+
+.box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.title {
+  padding: 15px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.popular {
+  background-color: #ffe0e0;
+  color: #d32f2f;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.box.open .content {
+  max-height: 200px;
+  padding: 15px;
+  animation: bounceIn 0.4s ease;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  text-align: left;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.cart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f4022a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.delivery {
+  margin-top: 10px;
+  color: green;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
